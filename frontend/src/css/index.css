@@ -1,0 +1,65 @@
+@import url('./global.css');
+
+body {
+    background-color: var(--color-background) !important;
+}
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+}
+.logo-rever-tecnologia {
+    width: 160px;
+    height: 50px;
+    pointer-events: none;
+    margin: 0 auto;
+}
+.login-form {
+    display: flex;
+    justify-items: center;
+    gap: 10px;
+    box-shadow: 2px 2px 10px var(--color-box-shadow);
+    border-radius: 5px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 45%;
+}
+.forget-password {
+    color: var(--color-rever-tecnologia) !important;
+    font-size: 16px !important;
+    margin-top: 10px !important;
+    cursor: pointer !important; 
+}
+input:focus {
+    box-shadow: none !important;
+    border: 1px solid var(--color-box-shadow) !important;
+}
+
+.container-footer {
+   bottom: 0;
+   text-align: center; 
+   justify-content: center;
+   align-items: center;
+}
+button {
+    background-color: var(--color-rever-tecnologia) !important;
+    color: var(--color-background) !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    transition: background-color 0.3s ease !important;
+    font-weight: bold !important;
+}
+@media screen and (max-width: 600px){
+    .login-form {
+        width: 90%;
+    }
+
+}
