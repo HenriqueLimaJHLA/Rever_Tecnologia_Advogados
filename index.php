@@ -1,8 +1,11 @@
 <?php
+require_once './backend/src/config/Config.php';
+require_once './backend/src/database/Database.php';
+
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -23,7 +26,7 @@
             <input type="email" class="form-control" id="email_login" placeholder="Insira o seu email" required autocomplete="off">
             <input type="password" class="form-control" id="password_login" placeholder="Insira a sua senha" required autocomplete="off">
             <input type="hidden" name="csrf_token" value="<?= uniqid() ?>">
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button type="submit" class="btn btn-primary">Login</button>
             <div class="form-group">
                 <a class="forget-password" id="forget_password">Esqueci minha senha</a>
             </div>
